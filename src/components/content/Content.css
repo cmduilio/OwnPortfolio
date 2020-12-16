@@ -1,0 +1,5 @@
+div {
+  position: relative;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+}
