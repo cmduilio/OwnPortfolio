@@ -1,5 +1,5 @@
-div {
-  position: relative;
-  color: var(--text-secondary);
-  background-color: var(--bg-secondary);
+.content {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin-top: 3.5rem;
 }

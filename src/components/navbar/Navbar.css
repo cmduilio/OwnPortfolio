@@ -3,6 +3,9 @@
     width: 100%;
     background-color: var(--bg-primary);
     border-bottom: .25rem solid var(--text-primary);
+    position: fixed;
+    z-index: 2;
+    top: 0;
 }
 
 .navigation {
