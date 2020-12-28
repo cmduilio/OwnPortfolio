@@ -2,17 +2,17 @@ import React from 'react';
 import './Menu.css';
 import MenuItem from "../menuItem/MenuItem";
 
-function Menu({home, menu, style}) {
+function Menu({home, menu, style, itemStyle}) {
     return (
         <ul className={"menu"} style={style}>
             <li className={"item"} style={{marginRight: "auto"}}>
-                <MenuItem url={"#"} text={home.text}/>
+                <MenuItem url={"#"} text={home.text} style={itemStyle}/>
             </li>
 
             {menu.map(data => {
                 return (
                     <li className={"item"}>
-                        <MenuItem url={data.id} text={data.text}/>
+                        <MenuItem style={itemStyle} url={data.url} text={data.text}/>
                     </li>
                 )
             })}

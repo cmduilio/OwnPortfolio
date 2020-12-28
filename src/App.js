@@ -8,7 +8,7 @@ import Banner from "./components/banner/Banner";
 
 function App() {
     const home = {text: "Home"};
-    const menu = [{text: "Adopt"}, {text: "About Us"}, {text: "Help"}]
+    const menu = [{url: "#", text: "Adopt"}, {url: "#",text: "About Us"}, {url: "#",text: "Help"}]
     return (
         <div className="App">
             <BrowserRouter>
