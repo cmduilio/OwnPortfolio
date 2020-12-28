@@ -1,33 +1,11 @@
 import React from 'react';
 import './Navbar.css';
+import Menu from "./menu/Menu";
 
-function Navbar({home, menu}) {
-    const onClick = (e) => {
-        console.log("clickeadito");
-    }
-
+function Navbar({home, menu, sticky}) {
     return(
-            <nav className={"navbar"}>
-                <ul className={"navigation"}>
-
-                    <li className={"home"}>
-                        <a href="#" className={"link"}>
-                            <span className={"text"}>
-                                {home.text}
-                            </span>
-                        </a>
-                    </li>
-
-                    {menu.map(data => {
-                        return <li className={"item"} onClick={onClick}>
-                            <a href="#" className={"link"}>
-                                <span className={"text"}>
-                                    {data.text}
-                                </span>
-                            </a>
-                        </li>
-                    })}
-                </ul>
+            <nav className={"navbar"} style={sticky ? {position: "sticky"}: {}}>
+                <Menu home={home} menu={menu}/>
             </nav>
     );
 }

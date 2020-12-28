@@ -1,10 +1,10 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import './App.css';
 import Navbar from "./components/navbar/Navbar";
 import Content from "./components/content/Content";
 import Deleteme from "./components/deleteme/Deleteme";
-import AnimatedBackground from "./components/animatedBackground/AnimatedBackground";
+import Banner from "./components/banner/Banner";
 
 function App() {
     const home = {text: "Home"};
@@ -12,7 +12,8 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
-                <Navbar home={home} menu={menu}/>
+                <Banner home={home} menu={menu}/>
+                <Navbar home={home} menu={menu} sticky={true}/>
                 <Content content={Deleteme}/>
             </BrowserRouter>
         </div>
