@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Arrow from "../slideshow/arrow/Arrow";
-import Slide from "./slide/Slide";
+import Arrow from "../Arrow/Arrow";
+import Slide from "../slide/Slide";
 import camit from "../../resources/camit.jpg"
 
 function Carousel(props) {

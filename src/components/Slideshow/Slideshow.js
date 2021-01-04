@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./Slideshow.css";
-import Arrow from "./arrow/Arrow";
+import Arrow from "../Arrow/Arrow";
 
 function Slideshow({images}) {
 
@@ -16,7 +16,6 @@ function Slideshow({images}) {
         const shouldresetindex = currentIndex === 0;
         const index =  shouldresetindex ? lastindex : currentIndex - 1;
 
-        console.log("index: ", index);
         setCurrentIndex(index);
     }
 
@@ -43,7 +42,7 @@ function Slideshow({images}) {
 
                 <div className={"slide-navigation"}>
                     {images.map((img, index) => {
-                        return <label className={"bar"} onClick={() => labelClicked(index)} id={"l" + index } style={currentIndex === index ? {background: "white"} : {background: "transparent"}}/>;
+                        return <label key={index} className={"bar"} onClick={() => labelClicked(index)} id={"l" + index } style={currentIndex === index ? {background: "white"} : {background: "transparent"}}/>;
                     })}
                 </div>
             </div>

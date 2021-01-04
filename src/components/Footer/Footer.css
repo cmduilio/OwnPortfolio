@@ -1,0 +1,6 @@
+.footer {
+    border-top: .25rem solid var(--text-primary);
+    background-color: var(--bg-primary);
+    height: 10rem;
+    width: 100%;
+}

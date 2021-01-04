@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import Menu from "./menu/Menu";
+import Menu from "../Menu/Menu";
 
 function Navbar({home, menu, sticky}) {
     return(
