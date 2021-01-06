@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (
         <div className={"footer"}>
-            <label>Mauro Duilio Candotti™</label>
+            <label style={{color: "var(--text-primary)"}}>Mauro Duilio Candotti™</label>
         </div>
     )
 }
