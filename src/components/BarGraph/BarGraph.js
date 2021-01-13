@@ -2,10 +2,12 @@ import React from 'react';
 import './BarGraph.css'
 import LabeledBar from "../LabeledBar/LabeledBar";
 
-function BarGraph({graphs}) {
+function BarGraph({graphs, title}) {
     return (
-            <div style={{margin:"auto", width:"75%"}}>
-                <label className={"graph-title"}>My amor por las cosas que tengo</label>
+            <div className={"graph"}>
+                <div className={"graph-title"}>
+                    {title}
+                </div>
                 {graphs.map(graph => {
                     return <LabeledBar key={graph.label} label={graph.label} width={graph.width}/>
                 })}

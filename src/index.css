@@ -1,9 +1,11 @@
 :root {
   font-size: 16px;
-  --text-primary: #FF7EEE;
+  --text-primary: #000000;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --bg-primary: #ececec;
+  --bg-secondary: #FFFFFF;
+  --bg-button: #F9BF17;
+  --bg-button-hover: #F8AE17;
   --transition-speed: 600ms;
   --text-dark: white;
   scroll-behavior: smooth;

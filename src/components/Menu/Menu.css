@@ -6,6 +6,7 @@
     display: flex;
     justify-content: flex-end;
     border-bottom: var(--text-primary);
+    background-color: var(--bg-button);
 }
 
 .item{
@@ -18,5 +19,5 @@
 }
 
 .item:hover{
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-button-hover);
 }

@@ -31,7 +31,8 @@ function Slideshow({images}) {
 
     return(
         <div className={"slideshow middle"}>
-            <div className={"slide"} style={{backgroundImage: `url(${images[currentIndex].url})`, backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
+            <div className={"slide"}
+                 style={{backgroundImage: `url(${images[currentIndex].url})`}}>
 
                 <Arrow direction={"left"}
                        clickFunction={previousSlide}
@@ -42,7 +43,7 @@ function Slideshow({images}) {
 
                 <div className={"slide-navigation"}>
                     {images.map((img, index) => {
-                        return <label key={index} className={"bar"} onClick={() => labelClicked(index)} id={"l" + index } style={currentIndex === index ? {background: "white"} : {background: "transparent"}}/>;
+                        return <label key={index} className={"bar"} onClick={() => labelClicked(index)} id={"l" + index } style={{background: `${currentIndex === index ?"white" : "transparent"}`}}/>;
                     })}
                 </div>
             </div>

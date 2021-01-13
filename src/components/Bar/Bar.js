@@ -3,13 +3,13 @@ import './Bar.css';
 
 function Bar({width}) {
 
-    const yourElement = useRef();
+    const bar = useRef();
 
     const [visible, setVisible] = useState(false);
 
     const isInViewport = (offset = 0) => {
-        if (!yourElement || !(yourElement.current)) return false;
-        const top = yourElement.current.getBoundingClientRect().top;
+        if (!bar || !(bar.current)) return false;
+        const top = bar.current.getBoundingClientRect().top;
         return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
     }
 
@@ -20,7 +20,7 @@ function Bar({width}) {
     }, []);
 
     return (
-        <div className={"growing-bar"} style={visible ? {width: width} : {}} ref={yourElement} onClick={() => console.log("pimba: ")}/>
+        <div className={"growing-bar"} style={visible ? {width: width} : {}} ref={bar}/>
     )
 }
 

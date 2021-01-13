@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer() {
+function Footer({title}) {
     return (
         <div className={"footer"}>
-            <label style={{color: "var(--text-primary)"}}>Mauro Duilio Candotti™</label>
+            <div className={"footer-title"}>
+                {title}
+            </div>
         </div>
     )
 }

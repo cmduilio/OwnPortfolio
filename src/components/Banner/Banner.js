@@ -3,16 +3,19 @@ import './Banner.css';
 import gif from '../../resources/CatGif.gif'
 import Menu from "../Menu/Menu";
 
-function Banner({home, menu}) {
+function Banner({home, menu, title, subtitle}) {
+    const menuStyle = {display: "flex", flexDirection: "column", backgroundColor: "transparent"};
+    const itemStyle = {padding: "10px"};
     return (
         <>
-            <h1 style={{position: "absolute", width: "100%", textAlign:"center", top: "10%", color: "var(--text-primary)", textShadow: "0 0 10px var(--bg-secondary)"}}>
-                Plaza de Mascotas
-            </h1>
-            <div style={{flexDirection: "column", position: "absolute", top: "50%", left:"10%", transform: "translateY(-50%)"}}>
-                <Menu home={home} menu={menu} style={{display: "flex", flexDirection: "column"}} itemStyle={{padding: "10px", color: "var(--text-dark)"}}/>
+            <div className={"banner-title"} >
+                <h1>{title}</h1>
+                <div>{subtitle}</div>
             </div>
-            <div id="" className={"background-container"} style={{backgroundImage: `url(${gif}`, backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}/>
+            <div className={"banner-menu"}>
+                <Menu home={home} menu={menu} style={menuStyle} itemStyle={itemStyle}/>
+            </div>
+            <div id="" className={"background-container"} style={{backgroundImage: `url(${gif}`}}/>
         </>
     );
 }

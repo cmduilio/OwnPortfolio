@@ -4,3 +4,7 @@
     height: 10rem;
     width: 100%;
 }
+
+.footer-title{
+    color: var(--text-primary);
+}
