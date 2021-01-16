@@ -2,8 +2,8 @@
   font-size: 16px;
   --text-primary: #000000;
   --text-secondary: #ececec;
-  --bg-primary: #ececec;
-  --bg-secondary: #FFFFFF;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #f2f2f2;
   --bg-button: #F9BF17;
   --bg-button-hover: #F8AE17;
   --transition-speed: 600ms;

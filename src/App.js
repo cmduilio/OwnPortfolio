@@ -2,14 +2,13 @@ import React from 'react';
 import {BrowserRouter} from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import Content from "./components/Content/Content";
-import Deleteme from "./components/Deleteme/Deleteme";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
 
 function App() {
     const home = {text: "Home"};
-    const menu = [{id: 1, url: "#", text: "Adopt"}, {id: 2, url: "#",text: "About Us"}, {id: 2, url: "#",text: "Help"}]
+    const menu = [{id: 1, url: "#", text: "About me"}, {id: 2, url: "#experience",text: "Experience"}, {id: 3, url: "#projects",text: "Projects"}, {id: 4, url: "#contact",text: "Contact"}]
     const title = "asd";
     const subtitle = "pepepe";
     const footerTitle = "Mauro Duilio Candotti";
@@ -18,7 +17,7 @@ function App() {
             <BrowserRouter>
                 <Banner home={home} menu={menu} title={title} subtitle={subtitle}/>
                 <Navbar home={home} menu={menu} sticky={true}/>
-                <Content content={Deleteme}/>
+                <Home/>
                 <Footer title={footerTitle}/>
             </BrowserRouter>
         </div>

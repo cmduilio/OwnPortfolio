@@ -1,13 +1,11 @@
 import React from 'react';
 import './Content.css';
 
-function Content({content}) {
+function Content({content, id}) {
     return (
-        <>
-            <div className={"content"}>
-                {content}
-            </div>
-        </>
+        <div id={id} className={"content"}>
+            {content}
+        </div>
     );
 }
 

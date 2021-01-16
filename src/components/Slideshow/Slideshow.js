@@ -43,7 +43,13 @@ function Slideshow({images}) {
 
                 <div className={"slide-navigation"}>
                     {images.map((img, index) => {
-                        return <label key={index} className={"bar"} onClick={() => labelClicked(index)} id={"l" + index } style={{background: `${currentIndex === index ?"white" : "transparent"}`}}/>;
+                        return <label
+                            key={index}
+                            className={"bar"}
+                            onClick={() => labelClicked(index)}
+                            id={"l" + index }
+                            style={{background: `${currentIndex === index ? "purple" : "transparent"}`}}
+                        />;
                     })}
                 </div>
             </div>

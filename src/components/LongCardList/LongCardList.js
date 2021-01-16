@@ -1,15 +1,14 @@
 import React from 'react';
-import './CardList.css';
-import Card from "../Card/Card";
+import './LongCardList.css';
+import LongCard from "../LongCard/LongCard";
 
-function CardList({cards, growOnHover}) {
+function CardList({cards}) {
     return (
-        <div className={"cards-list"}>
+        <div className={"longcards-list"}>
             {cards.map(card => {
                 return(
                     <div key={card.id}>
-                        <Card grow={growOnHover}
-                              description={card.description}
+                        <LongCard description={card.description}
                               subtitle={card.subtitle}
                               title={card.title}
                               url={card.url}
