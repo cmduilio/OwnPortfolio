@@ -1,6 +1,5 @@
 .slideshow {
-    width: 700px;
-    height: 400px;
+    height: 25vh;
     overflow: hidden;
     position: relative;
     margin: auto;
