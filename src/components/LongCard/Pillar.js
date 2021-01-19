@@ -1,9 +1,9 @@
 import React from "react";
-import './LongCard.css';
+import './Pillar.css';
 
-function LongCard({url, title, subtitle, description}) {
+function Pillar({url, title, subtitle, description, style}) {
     return (
-        <div className={"longcard"}>
+        <div className={"longcard"} style={style}>
             <div className={"longcard-image"} style={{backgroundImage: `url(${url}`}}/>
             <div className={"longcard-title"}>{title}</div>
             <div className={"longcard-subtitle"}>{subtitle}</div>
@@ -12,4 +12,4 @@ function LongCard({url, title, subtitle, description}) {
     )
 }
 
-export default LongCard;
+export default Pillar;
