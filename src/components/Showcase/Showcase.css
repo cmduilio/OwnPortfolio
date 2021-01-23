@@ -1,0 +1,26 @@
+.showcase {
+    border-bottom: .25rem solid var(--text-primary);
+    background-color: var(--bg-primary);
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    margin: 0;
+}
+
+.showcase-title{
+    color: var(--text-primary);
+}
+
+.showcase-content{
+    height: 100%;
+    width: 100%;
+}
+
+.showcase-image{
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
