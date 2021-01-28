@@ -46,8 +46,8 @@ function Home() {
     return (
         <div>
             <div id={"projects"}>
-                <Showcase title={"Mercadolibre"} url={logo}/>
-                <Showcase title={"Santander Tecnología"} url={camit}/>
+                <Showcase title={"Mercadolibre"} subtitle={"pepe"} description={"popooopopppopopopo"} url={logo}/>
+                <Showcase title={"Santander Tecnología"} subtitle={"pepe"} description={"popooopopppopopopo"} url={camit}/>
                 <CardList growOnHover={false} cards={images}/>
             </div>
 
