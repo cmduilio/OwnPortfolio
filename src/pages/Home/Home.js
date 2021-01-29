@@ -3,7 +3,10 @@ import Slideshow from "../../components/Slideshow/Slideshow";
 import camit from '../../resources/camit.jpg';
 import logo from '../../resources/logo.svg';
 import CardList from "../../components/CardList/CardList";
-import Showcase from "../../components/Showcase/Showcase";
+import ShowcaseList from "../../components/ShowcaseList/ShowcaseList";
+import santa from '../../resources/Santa.jpg';
+import meli from '../../resources/meli2.jpg';
+
 const images = [
     {id: 1, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
     {id: 2, url: camit, description: "Es camit, es muy bonita y gatoronjosa, no mucho más", subtitle: "Naranjosa con blanquito", title: "Camit"},
@@ -13,42 +16,33 @@ const images = [
     {id: 6, url: camit, description: "Es camit, es muy bonita y gatoronjosa, no mucho más", subtitle: "Naranjosa con blanquito", title: "Camit"}
     ];
 
-const skills = [{label: "Camit", width: "75%"}, {label: "Saku", width: "75%"}, {label: "Florcita", width: "100%"}, {label: "PC", width: "90%"}, {label: "Calor", width: "1%"}];
-const title = "Mis cositas";
-const left = {
-    id: 1,
-    url: logo,
-    description: "un logo raro que no se, es el de react si no me equivoco",
-    subtitle: "Es el logo de react",
-    title: "Backend Developer",
-    list: ["Java", "Node", "Python"]
-};
-
-const middle = {
-    id: 2,
-    url: camit,
-    description: "un logo raro que no se, es el de react si no me equivoco",
-    subtitle: "Es el logo de react",
-    title: "Frontend Developer",
-    list: []
-};
-
-const right = {
-    id: 3,
-    url: logo,
-    description: "un logo raro que no se, es el de react si no me equivoco",
-    subtitle: "Es el logo de react",
-    title: "Self taught",
-    list: []
-};
+const showcaseList = [
+    {
+        title: "Senior Software Engineer",
+        subtitle:"Santander Tecnología",
+        description:"Java Engineer in Billing department. We focus on end-to-end initiatives, developing multiple REST applications (for accounting, taxes, billing,credit policies and many others) and reporting tools using technologies such as: jUnit, Spark, MySQL, Guice, jxls, AWS, GCP, Pulsar, redis, maven, gradle, git, Document Search, Elastic Search and others.",
+        from:"Sep. 2020",
+        to:"now",
+        backgroundUrl:santa,
+        url:"https://www.santander.com.ar/banco/online/select"
+    },
+    {
+        title:"Software Engineer",
+        subtitle:"Mercadolibre",
+        description:"Java Engineer in Billing department. We focus on end-to-end initiatives, developing multiple REST applications (for accounting, taxes, billing,credit policies and many others) and reporting tools using technologies such as: jUnit, Spark, MySQL, Guice, jxls, AWS, GCP, Pulsar, redis, maven, gradle, git, Document Search, Elastic Search and others.",
+        from:"Sep. 2018",
+        to:"Sep. 2020",
+        backgroundUrl:meli,
+        url:"http://www.mercadolibre.com.ar"
+    }
+]
 
 function Home() {
     return (
         <div>
             <div id={"projects"}>
-                <Showcase title={"Mercadolibre"} subtitle={"pepe"} description={"popooopopppopopopo"} url={logo}/>
-                <Showcase title={"Santander Tecnología"} subtitle={"pepe"} description={"popooopopppopopopo"} url={camit}/>
-                <CardList growOnHover={false} cards={images}/>
+                <CardList growOnHover={true} cards={images}/>
+                <ShowcaseList list={showcaseList} />
             </div>
 
             <Slideshow images={images}/>

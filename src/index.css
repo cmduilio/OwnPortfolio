@@ -1,13 +1,15 @@
 :root {
   font-size: 16px;
-  --text-primary: #000000;
-  --text-secondary: #ececec;
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #f2f2f2;
-  --bg-button: #F9BF17;
-  --bg-button-hover: #F8AE17;
+  --text-title: #c3073f;
+  --text-primary: #dddddd;
+  --text-secondary: #aeaeae;
+  --bg-primary: #1A1A1D;
+  --bg-secondary: #19191C;
+  /*--bg-button: #950740;
+  --bg-button-hover: #6f2232;*/
+  --bg-button: #b2062e;
+  --bg-button-hover: #df2222;
   --transition-speed: 600ms;
-  --text-dark: white;
   scroll-behavior: smooth;
 }
 

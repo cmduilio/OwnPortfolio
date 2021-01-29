@@ -1,9 +1,8 @@
 import React from 'react';
 import './Banner.css';
-import gif from '../../resources/CatGif.gif'
 import Menu from "../Menu/Menu";
 
-function Banner({home, menu, title, subtitle}) {
+function Banner({home, menu, title, subtitle, image}) {
     const menuStyle = {display: "flex", flexDirection: "column", backgroundColor: "transparent"};
     const itemStyle = {padding: "10px"};
     return (
@@ -15,7 +14,7 @@ function Banner({home, menu, title, subtitle}) {
             <div className={"banner-menu"}>
                 <Menu home={home} menu={menu} style={menuStyle} itemStyle={itemStyle}/>
             </div>
-            <div id="" className={"background-container"} style={{backgroundImage: `url(${gif}`}}/>
+            <div id="" className={"background-container"} style={{backgroundImage: `url(${image}`}}/>
         </>
     );
 }

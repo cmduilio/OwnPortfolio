@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import gif from '../src/resources/CatGif.gif'
 
 function App() {
     const home = {text: "Home"};
@@ -15,7 +16,7 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
-                <Banner home={home} menu={menu} title={title} subtitle={subtitle}/>
+                {/*<Banner home={home} menu={menu} title={title} subtitle={subtitle}/>*/}
                 <Navbar home={home} menu={menu} sticky={true}/>
                 <Home/>
                 <Footer title={footerTitle}/>

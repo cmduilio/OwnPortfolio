@@ -1,10 +1,10 @@
 .footer {
-    border-top: .25rem solid var(--text-primary);
+    border-top: .25rem solid var(--text-title);
     background-color: var(--bg-primary);
     height: 10rem;
     width: 100%;
 }
 
 .footer-title{
-    color: var(--text-primary);
+    color: var(--text-title);
 }

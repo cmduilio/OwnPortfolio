@@ -2,7 +2,7 @@
     height: 3.5rem;
     width: 100%;
     background-color: var(--bg-primary);
-    border-bottom: .25rem solid var(--text-primary);
+    border-bottom: .25rem solid var(--text-title);
     position: fixed;
     z-index: 2;
     top: 0;
@@ -15,7 +15,7 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    border-bottom: var(--text-primary);
+    border-bottom: var(--text-title);
 }
 
 .item{
