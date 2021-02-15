@@ -5,7 +5,6 @@ import Showcase from "../Showcase/Showcase";
 function ShowcaseList({list}) {
     return (
         <div>
-            <h2 style={{color: "var(--text-primary)"}}>Experience</h2>
             {list.map(elem => {
                 return(
                     <div key={elem.title}>

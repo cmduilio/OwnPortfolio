@@ -5,6 +5,7 @@ import Menu from "../Menu/Menu";
 function Banner({home, menu, title, subtitle, image}) {
     const menuStyle = {display: "flex", flexDirection: "column", backgroundColor: "transparent"};
     const itemStyle = {padding: "10px"};
+
     return (
         <>
             <div className={"banner-title-box"} >

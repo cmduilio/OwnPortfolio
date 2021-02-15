@@ -7,6 +7,8 @@ import ShowcaseList from "../../components/ShowcaseList/ShowcaseList";
 import santa from '../../resources/Santa.jpg';
 import meli from '../../resources/meli2.jpg';
 import Banner from "../../components/Banner/Banner";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 const images = [
     {id: 1, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
@@ -36,18 +38,24 @@ const showcaseList = [
         backgroundUrl:meli,
         url:"http://www.mercadolibre.com.ar"
     }
-]
+];
+
+const footerTitle = "Mauro Duilio Candotti";
 
 function Home({menu, home}) {
     return (
         <div>
-            <Banner title={"Mauro Duilio"} subtitle={"Software Engineer"} menu={menu} home={home}/>
+            <Banner title={"Mauro Duilio"} subtitle={"Software Developer"} menu={menu} home={home}/>
+            <Navbar home={home} menu={menu} sticky={true}/>
             <div id={"projects"}>
                 <CardList growOnHover={true} cards={images}/>
+            </div>
+            <div id={"experience"}>
+                <h2 style={{color: "var(--text-primary)"}}>Experience</h2>
                 <ShowcaseList list={showcaseList} />
             </div>
-
             <Slideshow images={images}/>
+            <Footer title={footerTitle}/>
         </div>
     )
 }

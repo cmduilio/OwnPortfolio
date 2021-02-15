@@ -1,7 +1,7 @@
 .showcase {
     border-bottom: .25rem solid var(--text-title);
     background-color: var(--bg-primary);
-    height: 20rem;
+    height: 16rem;
     display: flex;
     padding: 1rem;
     margin: 0;
@@ -16,10 +16,12 @@
 .showcase-container{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .showcase-image{
-    height: 75%;
+    height: 100%;
     width: 75%;
     margin: auto;
     background-size: contain;
@@ -57,10 +59,20 @@
     text-align: center;
     font-size: 1rem;
     transition: var(--transition-speed);
-    bottom: 0;
     filter: grayscale(20%) opacity(0.7);
+    text-decoration: none;
+}
+.showcase-link{
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .showcase-button:hover {
     filter: grayscale(0%) opacity(1);
+}
+
+@media only screen and (max-width: 750px) {
+  .showcase {
+    flex-direction: column;
+  }
 }

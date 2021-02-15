@@ -15,7 +15,7 @@ function Showcase({title, subtitle, description, backgroundUrl, url, from, to}) 
 
                 <div className={"showcase-subtitle"}>{subtitle}</div>
                 <div className={"showcase-description"}>{description}</div>
-                <a target={"_blank"} rel={"noopener noreferrer"} href={url} >
+                <a className={"showcase-link"} target={"_blank"} rel={"noopener noreferrer"} href={url} >
                     <span className={"showcase-button"} >
                         Visit site
                     </span>
