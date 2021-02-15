@@ -7,12 +7,14 @@ function Banner({home, menu, title, subtitle, image}) {
     const itemStyle = {padding: "10px"};
     return (
         <>
-            <div className={"banner-title"} >
-                <h1>{title}</h1>
-                <div>{subtitle}</div>
+            <div className={"banner-title-box"} >
+                <div className={"lightbar"}/>
+                <div className={"toplayer"}/>
+                <h1 className={"banner-title"}>{title}</h1>
+                <p className={"banner-title"}>{subtitle}</p>
             </div>
             <div className={"banner-menu"}>
-                <Menu home={home} menu={menu} style={menuStyle} itemStyle={itemStyle}/>
+                {!menu ? <></> : <Menu home={home} menu={menu} style={menuStyle} itemStyle={itemStyle}/>}
             </div>
             <div id="" className={"background-container"} style={{backgroundImage: `url(${image}`}}/>
         </>

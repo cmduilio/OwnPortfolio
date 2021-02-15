@@ -6,6 +6,7 @@ import CardList from "../../components/CardList/CardList";
 import ShowcaseList from "../../components/ShowcaseList/ShowcaseList";
 import santa from '../../resources/Santa.jpg';
 import meli from '../../resources/meli2.jpg';
+import Banner from "../../components/Banner/Banner";
 
 const images = [
     {id: 1, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
@@ -37,9 +38,10 @@ const showcaseList = [
     }
 ]
 
-function Home() {
+function Home({menu, home}) {
     return (
         <div>
+            <Banner title={"Mauro Duilio"} subtitle={"Software Engineer"} menu={menu} home={home}/>
             <div id={"projects"}>
                 <CardList growOnHover={true} cards={images}/>
                 <ShowcaseList list={showcaseList} />
