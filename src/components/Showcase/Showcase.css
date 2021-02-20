@@ -1,9 +1,9 @@
 .showcase {
-    border-bottom: .25rem solid var(--text-title);
+    border-bottom: .15rem solid var(--text-title);
     background-color: var(--bg-primary);
-    height: 16rem;
+    height: fit-content;
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0;
     text-align: left;
 }
@@ -18,15 +18,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .showcase-image{
-    height: 100%;
-    width: 75%;
+    height: 10rem;
     margin: auto;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .showcase-years{

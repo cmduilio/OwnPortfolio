@@ -5,7 +5,8 @@ function Showcase({title, subtitle, description, backgroundUrl, url, from, to}) 
     return (
         <div className={"showcase"}>
             <div className={"showcase-container"}>
-                <div className={"showcase-image"} style={{backgroundImage: `url(${backgroundUrl}`}}/>
+                <img className={"showcase-image"} src={backgroundUrl} alt={""}/>
+                {/*<div className={"showcase-image"} style={{backgroundImage: `url(${backgroundUrl}`}}/>*/}
             </div>
             <div className={"showcase-container"}>
                 <h3 className={"showcase-title"}>
