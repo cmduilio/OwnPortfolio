@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 
 function App() {
     const home = {text: "Home"};
-    const menu = [{id: 1, url: "#", text: "About me"}, {id: 2, url: "#experience",text: "Experience"}, {id: 3, url: "#projects",text: "Projects"}, {id: 4, url: "#contact",text: "Contact"}]
+    const menu = [{id: 1, url: "#about", text: "About me"}, {id: 2, url: "#projects",text: "Projects"}, {id: 3, url: "#experience",text: "Experience"}, {id: 4, url: "#contact",text: "Contact"}]
 
     return (
         <div className="App">

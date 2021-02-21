@@ -4,9 +4,9 @@ import './Footer.css';
 function Footer({title}) {
     return (
         <div className={"footer"}>
-            <div className={"footer-title"}>
+            <h3 className={"footer-title"}>
                 {title}
-            </div>
+            </h3>
         </div>
     )
 }

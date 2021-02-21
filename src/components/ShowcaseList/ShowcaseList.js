@@ -7,7 +7,7 @@ function ShowcaseList({list}) {
         <div>
             {list.map(elem => {
                 return(
-                    <div key={elem.title}>
+                    <div key={elem.subtitle}>
                         <Showcase title={elem.title} subtitle={elem.subtitle}
                                   description={elem.description} from={elem.from}
                                   to={elem.to} backgroundUrl={elem.backgroundUrl}

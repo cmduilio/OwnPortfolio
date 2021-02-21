@@ -11,6 +11,7 @@ import qw from '../../resources/qw.jpg';
 import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import About from "../../components/About/About";
 
 const images = [
     {id: 1, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
@@ -65,13 +66,24 @@ const footerTitle = "Mauro Duilio Candotti";
 function Home({menu, home}) {
     return (
         <div>
-            <Banner title={"Mauro Candotti"} subtitle={"Software Developer"} menu={menu} home={home}/>
+            <Banner title={"Mauro Candotti"} subtitle={"Software Engineer"} menu={menu} home={home}/>
             <Navbar home={home} menu={menu} sticky={true}/>
+            <div id={"about"}>
+                <About title={"Hi, i'm maurito."} text={"soy muy bonito, qué puedo" +
+                "decir? no es mi culpa ser tan inteligente, hermoso y buen programador" +
+                "\n Si no fuera por tu vieja, estaría paseando por el mundo \n" +
+                "jejejejejeje"}/>
+            </div>
             <div id={"projects"}>
+                <h2 style={{color: "var(--text-primary)"}}>
+                    Projects
+                </h2>
                 <CardList growOnHover={true} cards={images}/>
             </div>
             <div id={"experience"}>
-                <h2 style={{color: "var(--text-primary)"}}>Experience</h2>
+                <h2 style={{color: "var(--text-primary)"}}>
+                    Experience
+                </h2>
                 <ShowcaseList list={showcaseList} />
             </div>
             {/*<Slideshow images={images}/>*/}
