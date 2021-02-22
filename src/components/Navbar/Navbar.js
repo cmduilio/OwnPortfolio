@@ -1,12 +1,21 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import './Navbar.css';
 import Menu from "../Menu/Menu";
 
 function Navbar({home, menu, sticky}) {
     const checkRef = useRef(null);
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        document.addEventListener('mousedown', (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                checkRef.current.checked = false;
+            }
+        })
+    }, [])
 
     return(
-        <div className={"navbar"} onBlur={() => {
+        <div className={"navbar"} ref={navRef} onBlur={() => {
             console.log("pepe");
         }}
              style={sticky ? {position: "sticky"}: {}}>
