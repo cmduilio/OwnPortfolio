@@ -15,10 +15,7 @@ function Navbar({home, menu, sticky}) {
     }, [])
 
     return(
-        <div className={"navbar"} ref={navRef} onBlur={() => {
-            console.log("pepe");
-        }}
-             style={sticky ? {position: "sticky"}: {}}>
+        <div className={"navbar"} ref={navRef} style={sticky ? {position: "sticky"}: {}}>
             <label htmlFor={"toogle"} className={"hamburguer item"}>
                 &#9776;
             </label>

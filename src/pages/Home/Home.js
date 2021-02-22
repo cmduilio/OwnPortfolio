@@ -1,5 +1,4 @@
 import React from 'react';
-import Slideshow from "../../components/Slideshow/Slideshow";
 import camit from '../../resources/camit.jpg';
 import logo from '../../resources/logo.svg';
 import CardList from "../../components/CardList/CardList";
@@ -86,7 +85,6 @@ function Home({menu, home}) {
                 </h2>
                 <ShowcaseList list={showcaseList} />
             </div>
-            {/*<Slideshow images={images}/>*/}
             <Footer title={footerTitle}/>
         </div>
     )
