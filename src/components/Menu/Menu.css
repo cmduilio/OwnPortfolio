@@ -5,7 +5,6 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    border-bottom: var(--text-title);
     background-color: var(--bg-primary);
 }
 
@@ -20,4 +19,11 @@
 
 .item:hover{
     background-color: var(--bg-button);
+}
+
+@media only screen and (max-width: 750px) {
+    .menu {
+        flex-direction: column;
+        border-bottom: none;
+    }
 }
