@@ -11,6 +11,7 @@
   --bg-button-hover: #df2222;
   --transition-speed: 600ms;
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 body {

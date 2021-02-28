@@ -13,6 +13,8 @@ import Footer from "../../components/Footer/Footer";
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 
+import './Home.css';
+
 const images = [
     {id: 1, url: saku, description: "Brave, lively and playful. Makes weird faces sleeping.", subtitle: "Calico!", title: "Saku"},
     {id: 2, url: camit, description: "Scaredy but very fond to me. Scared to storms (who isn't?)", subtitle: "Orange and white", title: "Camit"},
@@ -64,24 +66,24 @@ function Home({menu, home}) {
         <div>
             <Banner title={"Mauro Candotti"} subtitle={"Software Engineer"} menu={menu} home={home}/>
             <Navbar home={home} menu={menu} sticky={true}/>
-            <div id={"about"}>
-                <About title={"Hi, i'm Mauro."}
+            <section id={"about"}>
+                <About title={"Hi, I'm Mauro."}
                        text={"I'm a software developer focused on fullstack web development using Java, Node and React." +
-                       "\n I also like making components for Unreal Engine and try new things."}/>
-            </div>
-            <div id={"projects"}>
+                       "I also like making components for Unreal Engine and try new things."}/>
+            </section>
+            <section id={"projects"}>
                 <h2 style={{color: "var(--text-primary)"}}>
                     Projects
                 </h2>
                 <p style={{color: "var(--text-primary)"}}>(WiP, sorry... but meet my 2 cats!)</p>
                 <CardList growOnHover={true} cards={images}/>
-            </div>
-            <div id={"experience"}>
+            </section>
+            <section id={"experience"}>
                 <h2 style={{color: "var(--text-primary)"}}>
                     Experience
                 </h2>
                 <ShowcaseList list={showcaseList} />
-            </div>
+            </section>
             <div id={"contact"}>
                 <Contact/>
             </div>

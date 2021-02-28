@@ -7,7 +7,7 @@ function Banner({home, menu, title, subtitle, image}) {
     const itemStyle = {padding: "10px"};
 
     return (
-        <>
+        <section>
             <div className={"banner-title-box"} >
                 <div className={"lightbar"}/>
                 <div className={"toplayer"}/>
@@ -17,8 +17,13 @@ function Banner({home, menu, title, subtitle, image}) {
             <div className={"banner-menu"}>
                 {!menu ? <></> : <Menu home={home} menu={menu} style={menuStyle} itemStyle={itemStyle}/>}
             </div>
+            <div className={"banner-scroll"}>
+                <span/>
+                <span/>
+                <span/>
+            </div>
             <div id="" className={"background-container"} style={{backgroundImage: `url(${image}`}}/>
-        </>
+        </section>
     );
 }
 
