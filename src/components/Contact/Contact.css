@@ -2,6 +2,8 @@
     text-align: center;
     outline: none;
     margin: 5px;
+    border: .10rem solid var(--bg-button);
+    color: var(--text-primary);
 }
 
 .contact-input {
@@ -10,7 +12,14 @@
 }
 
 .contact-submit {
+    background-color: var(--bg-button);
     width: 5rem;
+    border-radius: 25px;
+}
+
+.contact-submit:hover{
+    background-color: var(--bg-button-hover);
+    border: .10rem solid var(--bg-button-hover);
 }
 
 .contact-form {
@@ -20,7 +29,7 @@
     border-radius: 10px;
     width: fit-content;
     margin: auto;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     padding: 10px;
 }
 

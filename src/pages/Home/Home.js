@@ -1,6 +1,6 @@
 import React from 'react';
 import camit from '../../resources/camit.jpg';
-import logo from '../../resources/logo.svg';
+import saku from '../../resources/saku.jpg';
 import CardList from "../../components/CardList/CardList";
 import ShowcaseList from "../../components/ShowcaseList/ShowcaseList";
 import santa from '../../resources/Santa.jpg';
@@ -14,12 +14,8 @@ import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 
 const images = [
-    {id: 1, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
-    {id: 2, url: camit, description: "Es camit, es muy bonita y gatoronjosa, no mucho más", subtitle: "Naranjosa con blanquito", title: "Camit"},
-    {id: 3, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
-    {id: 4, url: camit, description: "Es camit, es muy bonita y gatoronjosa, no mucho más", subtitle: "Naranjosa con blanquito", title: "Camit"},
-    {id: 5, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
-    {id: 6, url: camit, description: "Es camit, es muy bonita y gatoronjosa, no mucho más", subtitle: "Naranjosa con blanquito", title: "Camit"}
+    {id: 1, url: saku, description: "Brave, lively and playful. Makes weird faces sleeping.", subtitle: "Calico!", title: "Saku"},
+    {id: 2, url: camit, description: "Scaredy but very fond to me. Scared to storms (who isn't?)", subtitle: "Orange and white", title: "Camit"},
     ];
 
 const showcaseList = [
@@ -69,25 +65,25 @@ function Home({menu, home}) {
             <Banner title={"Mauro Candotti"} subtitle={"Software Engineer"} menu={menu} home={home}/>
             <Navbar home={home} menu={menu} sticky={true}/>
             <div id={"about"}>
-                <About title={"Hi, i'm maurito."} text={"soy muy bonito, qué puedo" +
-                "decir? no es mi culpa ser tan inteligente, hermoso y buen programador" +
-                "\n Si no fuera por tu vieja, estaría paseando por el mundo \n" +
-                "jejejejejeje"}/>
+                <About title={"Hi, i'm Mauro."}
+                       text={"I'm a software developer focused on fullstack web development using Java, Node and React." +
+                       "\n I also like making components for Unreal Engine and try new things."}/>
             </div>
             <div id={"projects"}>
                 <h2 style={{color: "var(--text-primary)"}}>
                     Projects
                 </h2>
+                <p style={{color: "var(--text-primary)"}}>(WiP, sorry... but meet my 2 cats!)</p>
                 <CardList growOnHover={true} cards={images}/>
-            </div>
-            <div id={"contact"}>
-                <Contact/>
             </div>
             <div id={"experience"}>
                 <h2 style={{color: "var(--text-primary)"}}>
                     Experience
                 </h2>
                 <ShowcaseList list={showcaseList} />
+            </div>
+            <div id={"contact"}>
+                <Contact/>
             </div>
             <Footer title={footerTitle}/>
         </div>
