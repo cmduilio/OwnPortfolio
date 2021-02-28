@@ -19,7 +19,7 @@ function Navbar({home, menu, sticky}) {
             <label htmlFor={"toogle"} className={"hamburguer item"}>
                 &#9776;
             </label>
-            <input type={"checkbox"} id={"toogle"} ref={checkRef}/>
+            <input className={"navbar-input"} type={"checkbox"} id={"toogle"} ref={checkRef}/>
             <Menu home={home} menu={menu} onClick={() => {
                 checkRef.current.checked = false;
             }}/>

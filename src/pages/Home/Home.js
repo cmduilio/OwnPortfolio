@@ -11,6 +11,7 @@ import Banner from "../../components/Banner/Banner";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import About from "../../components/About/About";
+import Contact from "../../components/Contact/Contact";
 
 const images = [
     {id: 1, url: logo, description: "un logo raro que no se, es el de react si no me equivoco", subtitle: "Es el logo de react", title: "React Logo"},
@@ -78,6 +79,9 @@ function Home({menu, home}) {
                     Projects
                 </h2>
                 <CardList growOnHover={true} cards={images}/>
+            </div>
+            <div id={"contact"}>
+                <Contact/>
             </div>
             <div id={"experience"}>
                 <h2 style={{color: "var(--text-primary)"}}>
