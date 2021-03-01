@@ -54,7 +54,7 @@ function Contact() {
                        name={"message"}
                        value={message}
                        onChange={event => setMessage(event.target.value)}/>
-                <input className={"contact-submit"} type={"button"} value={"Send"}/>
+                <input className={"contact-submit"} type={"submit"} value={"Send"}/>
             </form>
         </div>
     )

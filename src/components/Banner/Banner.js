@@ -17,11 +17,13 @@ function Banner({home, menu, title, subtitle, image}) {
             <div className={"banner-menu"}>
                 {!menu ? <></> : <Menu home={home} menu={menu} style={menuStyle} itemStyle={itemStyle}/>}
             </div>
-            <div className={"banner-scroll"}>
-                <span/>
-                <span/>
-                <span/>
-            </div>
+            <a href={"#about"}>
+                <div className={"banner-scroll"}>
+                    <span/>
+                    <span/>
+                    <span/>
+                </div>
+            </a>
             <div id="" className={"background-container"} style={{backgroundImage: `url(${image}`}}/>
         </section>
     );
