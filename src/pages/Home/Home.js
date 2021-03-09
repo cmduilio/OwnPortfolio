@@ -59,7 +59,7 @@ const showcaseList = [
     }
 ];
 
-const footerTitle = "Mauro Duilio Candotti";
+const footerTitle = `©${new Date().getFullYear()} Mauro Duilio Candotti`;
 
 function Home({menu, home}) {
     return (

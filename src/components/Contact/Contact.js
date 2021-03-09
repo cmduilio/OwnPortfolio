@@ -9,7 +9,23 @@ function Contact() {
     const [company, setCompany] = useState("");
 
     const validate = (e) => {
-        console.log(email);
+        let error;
+        if(!email){
+            error = "Please add a contact email.";
+        }
+
+        if(!message){
+            error = "Please write a message.";
+        }
+
+        if(!name){
+            error = "Tell me who you are, i don't bite... much.";
+        }
+
+        if(error){
+            window.alert(error);
+        }
+
         sendEmail(e);
     }
 
