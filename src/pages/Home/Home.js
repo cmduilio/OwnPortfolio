@@ -24,7 +24,7 @@ const showcaseList = [
     {
         title: "Senior Software Engineer",
         subtitle:"Santander Tecnología",
-        description:"Java Engineer in Billing department. We focus on end-to-end initiatives, developing multiple REST applications (for accounting, taxes, billing,credit policies and many others) and reporting tools using technologies such as: jUnit, Spark, MySQL, Guice, jxls, AWS, GCP, Pulsar, redis, maven, gradle, git, Document Search, Elastic Search and others.",
+        description:"Fullstack engineer in risk department. Using React/Node + Java with springboot.",
         from:"Sep. 2020",
         to:"now",
         backgroundUrl:santa,
@@ -33,7 +33,7 @@ const showcaseList = [
     {
         title:"Software Engineer",
         subtitle:"Mercadolibre",
-        description:"Java Engineer in Billing department. Focused on end-to-end initiatives, developing multiple REST applications (for accounting, billing,credit policies and many others) and reporting tools using technologies such as: jUnit, Spark, MySQL, Guice, jxls, AWS, GCP, Pulsar, redis, maven, gradle, git, Document Search, Elastic Search and others.",
+        description:"Java Engineer in Billing department. Focused on end-to-end initiatives, developing multiple REST applications and reporting tools using technologies such as: jUnit, Spark, MySQL, Guice, jxls, Pulsar, redis, Document Search, Elastic Search and many others.",
         from:"Aug. 2018",
         to:"Sep. 2020",
         backgroundUrl:meli,
@@ -68,7 +68,7 @@ function Home({menu, home}) {
             <Navbar home={home} menu={menu} sticky={true}/>
             <section id={"about"}>
                 <About title={"Hi, I'm Mauro."}
-                       text={"I'm a software developer focused on fullstack web development using Java, Node and React." +
+                       text={"I'm a software developer focused on fullstack web development using Java, Node and React. " +
                        "I also like making components for Unreal Engine and try new things."}/>
             </section>
             <section id={"projects"}>
