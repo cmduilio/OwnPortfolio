@@ -1,6 +1,6 @@
 {
-  "homepage": "http://cmduilio.github.io/OwnPortfolio",
-  "name": "custom-portfolio",
+  "homepage": "http://cmduilio.github.io/OwnPortfolio/",
+  "name": "OwnPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
