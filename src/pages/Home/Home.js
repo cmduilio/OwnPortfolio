@@ -64,7 +64,7 @@ const footerTitle = `©${new Date().getFullYear()} Mauro Duilio Candotti`;
 function Home({menu, home}) {
     return (
         <div>
-            <Banner title={"Mauro Candotti"} subtitle={"Software Engineer"} menu={menu} home={home}/>
+            <Banner title={"Mauro Candotti"} subtitle={"Systems Analyst"} menu={menu} home={home}/>
             <Navbar home={home} menu={menu} sticky={true}/>
             <section id={"about"}>
                 <About title={"Hi, I'm Mauro."}
