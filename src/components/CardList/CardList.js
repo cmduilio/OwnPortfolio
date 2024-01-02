@@ -13,6 +13,7 @@ function CardList({cards, growOnHover}) {
                               subtitle={card.subtitle}
                               title={card.title}
                               url={card.url}
+                              isVideo={card.isVideo}
                         />
                     </div>
                 )

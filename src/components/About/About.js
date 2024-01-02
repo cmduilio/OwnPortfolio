@@ -7,9 +7,11 @@ function About({title, text}) {
             <h2>
                 {title}
             </h2>
-            <p>
-                {text}
-            </p>
+            {
+                text.map( t => {
+                    return(<p>{t}</p>)
+                })
+            }
         </div>
     );
 }

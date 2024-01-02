@@ -1,6 +1,12 @@
 import React from 'react';
 import camit from '../../resources/camit.jpg';
 import saku from '../../resources/saku.jpg';
+import BallLightning from '../../resources/ball-lightning.mp4';
+import Water from '../../resources/Water.mp4';
+import Argentina from '../../resources/ArgentinaBoom.mp4';
+import Fire from '../../resources/Fuego.mp4';
+import Portal from '../../resources/Portal.mp4';
+import Smoke from '../../resources/Smoke.mp4';
 import CardList from "../../components/CardList/CardList";
 import ShowcaseList from "../../components/ShowcaseList/ShowcaseList";
 import santa from '../../resources/Santa.jpg';
@@ -16,8 +22,17 @@ import Contact from "../../components/Contact/Contact";
 import './Home.css';
 
 const images = [
-    {id: 1, url: saku, description: "Brave, lively and playful. Makes weird faces sleeping.", subtitle: "Calico!", title: "Saku"},
-    {id: 2, url: camit, description: "Scaredy but very fond to me. Scared to storms (who isn't?)", subtitle: "Orange and white", title: "Camit"},
+    {id: 1, url: saku, description: "Brave, lively and playful. Makes weird faces sleeping.", subtitle: "Calico!", title: "Saku", isVideo: false},
+    {id: 2, url: camit, description: "Scaredy but very fond to me. Scared to storms (who isn't?)", subtitle: "Orange and white", title: "Camit", isVideo: false},
+    ];
+
+const vfxs = [
+    {id: 1, url: BallLightning, title: "Ball Lightning", isVideo: true},
+    {id: 2, url: Water, title: "Water", isVideo: true},
+    {id: 3, url: Portal, title: "Portal", isVideo: true},
+    {id: 4, url: Fire, title: "Simple fire", isVideo: true},
+    {id: 5, url: Smoke, title: "Smoke", isVideo: true},
+    {id: 6, url: Argentina, title: "Explotion", isVideo: true},
     ];
 
 const showcaseList = [
@@ -68,8 +83,15 @@ function Home({menu, home}) {
             <Navbar home={home} menu={menu} sticky={true}/>
             <section id={"about"}>
                 <About title={"Hi, I'm Mauro."}
-                       text={"I'm a software developer focused on fullstack web development using Java, Node and React. " +
-                       "I also like making components for Unreal Engine and try new things."}/>
+                       text={[`I'm a graduated software programmer from Argentina, currently fulltime game programmer en NIMBLE GIANT.`,
+                       "In my personal time i like creating components and vfx for Unreal Engine and always eager to learn new things.",
+                       `I used to work as fullstack web development using Java, Node and React in big companies such as MercadoLibre (a really big eCommerce in LATAM fighting toe to toe with Amazon).`]}/>
+            </section>
+            <section id={"vfx"}>
+                <h2 style={{color: "var(--text-primary)"}}>
+                    VFX
+                </h2>
+                <CardList growOnHover={true} cards={vfxs}/>
             </section>
             <section id={"projects"}>
                 <h2 style={{color: "var(--text-primary)"}}>
@@ -78,12 +100,14 @@ function Home({menu, home}) {
                 <p style={{color: "var(--text-primary)"}}>(WiP, sorry... but meet my 2 cats!)</p>
                 <CardList growOnHover={true} cards={images}/>
             </section>
+            {/*
             <section id={"experience"}>
                 <h2 style={{color: "var(--text-primary)"}}>
                     Experience
                 </h2>
                 <ShowcaseList list={showcaseList} />
             </section>
+             */}
             <div id={"contact"}>
                 <Contact/>
             </div>
